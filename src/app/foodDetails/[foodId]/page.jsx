@@ -22,7 +22,7 @@ const FoodDetails = async ({ params }) => {
 
                 <div>
                     <h3 className="font-heading text-lg font-semibold text-card-foreground mb-3">Nutrition Per Serving</h3>
-                    <div className="grid grid-cols-5 gap-2">
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
 
 
                         {/* Calories */}
