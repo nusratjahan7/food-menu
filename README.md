@@ -57,30 +57,6 @@ This app provides:
 
 ---
 
-## 🗂 Project Structure
-.
-├── public/
-│ ├── file.svg
-│ ├── globe.svg
-│ ├── next.svg
-│ ├── vercel.svg
-│ └── window.svg
-├── src/
-│ ├── Component/
-│ │ ├── Hero.jsx
-│ │ ├── Menu.jsx
-│ │ └── Navbar.jsx
-│ └── app/
-│ └── foodDetails/[foodId]/
-│ └── page.jsx
-│ └── page.jsx
-│ └── globals.css
-│ └── layout.js
-│ └── favicon.ico
-├── tailwind.config.js
-├── package.json
-└── README.md
-
 # Food Menu Web App 🍽️
 
 A **restaurant food menu web application** built with **Next.js**, **React**, and **Tailwind CSS**. This project displays a collection of dishes on the homepage and allows users to click a “Details” button to view full information about each dish.
