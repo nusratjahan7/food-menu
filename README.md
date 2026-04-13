@@ -14,7 +14,6 @@ This app provides:
     - Dish image
     - Dish name
     - Rating
-    - Price
     - Cuisine category
   - A **“Details”** button that navigates to a dedicated page for that dish
 
