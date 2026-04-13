@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Food Menu Web App 🍽️
 
-## Getting Started
+A **restaurant food menu web application** built with **Next.js**, **React**, and **Tailwind CSS**. This project displays a collection of dishes on the homepage and allows users to click a “Details” button to view full information about each dish.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This app provides:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Homepage Menu Grid**  
+  - Shows all available food items
+  - Each card displays:
+    - Dish image
+    - Dish name
+    - Rating
+    - Price
+    - Cuisine category
+  - A **“Details”** button that navigates to a dedicated page for that dish
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Dish Details Page**  
+  After clicking **Details**, the user sees:
+  - **Dish Name**
+  - **Alternative / Common Names**
+  - **Main Ingredients**
+  - **Approximate Nutrition Per Serving**
+    - Calories
+    - Protein
+    - Carbs
+    - Fat
+    - Fiber
+  - **Rating**
+  - **Price**
+  - **Cuisine Type**
+  - **Step‑by‑Step Cooking Instructions**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧠 Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✔ Fully responsive layout  
+✔ Built with Next.js (React + SSR/SSG)  
+✔ Styled using Tailwind CSS  
+✔ Dynamic navigation between homepage and food detail pages  
+✔ Clean, modern UI for browsing food items
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Category       | Technology |
+| -------------- | ---------- |
+| Framework      | Next.js (React) |
+| Styling        | Tailwind CSS |
+| Markup         | HTML5 |
+| JavaScript     | ES6+ |
+| Deployment     | Vercel |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🗂 Project Structure
+.
+├── public/
+│ ├── file.svg
+│ ├── globe.svg
+│ ├── next.svg
+│ ├── vercel.svg
+│ └── window.svg
+├── src/
+│ ├── Component/
+│ │ ├── Hero.jsx
+│ │ ├── Menu.jsx
+│ │ └── Navbar.jsx
+│ └── app/
+│ └── foodDetails/[foodId]/
+│ └── page.jsx
+│ └── page.jsx
+│ └── globals.css
+│ └── layout.js
+│ └── favicon.ico
+├── tailwind.config.js
+├── package.json
+└── README.md
+
+# Food Menu Web App 🍽️
+
+A **restaurant food menu web application** built with **Next.js**, **React**, and **Tailwind CSS**. This project displays a collection of dishes on the homepage and allows users to click a “Details” button to view full information about each dish.
+
+Live demo: [Food Menu Demo](https://food-menu-brown-alpha.vercel.app/)  
+GitHub: [Food Menu Repository](https://github.com/nusratjahan7/food-menu)
+
+---
+
+## 📌 Project Overview
+
+This app provides:
+
+### 🍔 Homepage
+- **Fetches & displays a list of food items**  
+- Uses **card layout** for thumbnail previews
+- Each card includes:
+  - **Dish name**
+  - **Price**
+  - **Star rating**
+  - **“Details” button** that navigates to the food's detailed page
+
+### 📋 Food Details Page
+- Uses **dynamic routing** (`/food/[foodId]`)
+- Shows full food info:
+  - **Alternative dish names** (if any)
+  - **Main ingredients**
+  - **Nutrition facts** (e.g., calories, protein, fat, carbs, fiber)
+  - **Step‑by‑step cooking instructions**
+  - **Cuisine & category tags**
+
+---
+
+## 📈 How It Works
+
+1. **Homepage**
+   - Displays a grid layout of food items.
+   - Each item card features an image, dish name, price, star rating, and a **“Details”** button.
+  
+2. **Food Details Page**
+   - Upon clicking the "Details" button, the user is directed to the food’s individual page.
+   - Displays a comprehensive breakdown of the dish, including alternative names, ingredients, nutrition facts, and cooking instructions.
+
+---
+
+## 📦 Deployment
+
+This project is deployed on **Vercel** — simply push changes to the `main` branch and Vercel will auto‑deploy.
